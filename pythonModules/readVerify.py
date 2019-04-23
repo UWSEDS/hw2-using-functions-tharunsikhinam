@@ -6,7 +6,6 @@ Created on Tue Apr 23 11:33:38 2019
 @author: tharun
 """
 import pandas as pd
-import numpy as np
 
 def read_data(url="",separator=","):
     df = pd.read_csv(url,sep=separator)

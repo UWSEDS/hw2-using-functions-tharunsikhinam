@@ -35,13 +35,13 @@ def test_create_dataframe(df,columns = [],column_type=[]):
         return False
     
     #check if the column names are matching 
-    for column in columns:
-        if column not in dfColumns:
+    for column in dfColumns:
+        if column not in columns:
             print("Column names do not match")
             return False
     
     #check if the datatypes are matching
-    for column in columns:
+    for column in dfColumns:
         if  df[column].dtype != column_type[columns.index(column)]:
             print("Datatypes do not match")
             return False
